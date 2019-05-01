@@ -28,3 +28,7 @@ def login():
         #     flash("You Log In was Successful!")
         return redirect(url_for('main.index'))
     return render_template('login.html', form=form)
+
+@main.route('/profile/user')
+def profile():
+    return render_template('profile.html')
