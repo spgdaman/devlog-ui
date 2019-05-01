@@ -1,0 +1,5 @@
+__pyc__/
+virtual/
+*pyc
+.vscode/
+*.vscode
