@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../static/styles.css">
 {% extends 'base.html' %}
 {% block content %}
 <div style="padding-top: 25px;">
@@ -21,9 +22,9 @@
                                     <a class="toggle btn btn-primary"><i class="fas fa-upload"></i> Upload Profile Picture</a>
 
                                     <!-- Upload profile pic here -->
-                                    <form method="post" enctype ="multipart/form-data" id="upload">
+                                    <form method="post" enctype ="multipart/form-data" id="upload" class="show">
                                     <div class="custom-file">
-                                            <label class="custom-file-label" for="inputGroupFile01">Upload Pic</label>
+                                            <label class="custom-file-label" for="inputGroupFile01">Upload Picture</label>
                                         <input type="file" name="photo" class="custom-file-input" id="inputGroupFile01" required>
                                     </div>
                                     <input class="btn btn-success" type="submit">
@@ -34,7 +35,7 @@
                                     <script type="text/javascript">
                                         $(document).ready(function(){
                                             $(".toggle").click(function(){
-                                                $("#upload").toggle();
+                                                $("#upload").toggleClass(".show");
                                             });
                                         });
                                     </script>

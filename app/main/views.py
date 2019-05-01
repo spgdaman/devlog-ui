@@ -32,3 +32,7 @@ def login():
 @main.route('/profile/user')
 def profile():
     return render_template('profile.html')
+
+@main.route('/posts')
+def display_all_posts():
+    return render_template('allposts.html')
