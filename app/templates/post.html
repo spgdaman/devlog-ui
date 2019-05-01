@@ -1,4 +1,56 @@
+<link rel="stylesheet" href="../static/styles.css">
 {% extends 'base.html' %}
 {% block content %}
+    <div class="container">
+        <!-- Post Title goes somewhere here? -->
+        <h1>Post Title</h1>
+        <div class="row">
 
+            <!-- Posts go here -->
+            <div class="col-md-8">
+                <div class="posts">
+
+                    <!-- Post image goes here if any, use Jinja if to evaluate if true -->
+                    <img src="../static/profile_pic.jpg" class="card-img-top img-fluid" alt="Responsive image" style="height:250px; margin-bottom: 25px;">
+
+                    <div class="card mb-3">
+                        <!-- Post content goes here -->
+                        <div class="card-body">
+                            <h5 class="card-title">Post title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <!-- Moment js goes here -->
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Side bar goes here -->
+            <aside class="col-md-4">
+                <div class="card" style="width: 18rem; margin-bottom: 25px;">
+                    <div class="card-header">
+                        Stacks
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fab fa-python"></i> Python</li>
+                        <li class="list-group-item"><i class="fab fa-java"></i> Java</li>
+                        <li class="list-group-item"><i class="fab fa-js"></i> JavaScript</li>
+                        <li class="list-group-item"><i class="fab fa-cuttlefish"></i> C</li>
+                        <li class="list-group-item"><i class="fab fa-php"></i> PHP</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        Frameworks
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fab fa-angular"></i> Angular</li>
+                        <li class="list-group-item"><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                        <li class="list-group-item"><i class="fab fa-vuejs"></i> Vue</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
 {% endblock %}

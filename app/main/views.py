@@ -36,3 +36,7 @@ def profile():
 @main.route('/posts')
 def display_all_posts():
     return render_template('allposts.html')
+
+@main.route('/post/post_id')
+def post():
+    return render_template('post.html')
