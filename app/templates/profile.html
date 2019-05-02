@@ -19,7 +19,7 @@
                                     <h5 class="card-title">Username</h5>
 
                                     <!-- Toggle profile picture here -->
-                                    <a class="toggle btn btn-primary"><i class="fas fa-upload"></i> Upload Profile Picture</a>
+                                    <a class="toggle btn btn-primary" style="margin-bottom: 15px;"><i class="fas fa-upload"></i> Upload Profile Picture</a>
 
                                     <!-- Upload profile pic here -->
                                     <form method="post" enctype ="multipart/form-data" class="upload">
@@ -35,7 +35,7 @@
                                     <script type="text/javascript">
                                         $(document).ready(function(){
                                             $(".toggle").click(function(){
-                                                $("upload").toggleClass("show");
+                                                $(".upload").toggle();
                                             });
                                         });
                                     </script>
@@ -56,6 +56,7 @@
                             <p>Insert brief description about your stack</p>
                         </div>
                         
+                        <a style="text-align: center;" class="btn btn-success" href="{{ url_for('main.edit_profile') }}">Edit Profile</a>
                     </div>
 
 

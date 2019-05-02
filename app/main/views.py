@@ -40,3 +40,7 @@ def display_all_posts():
 @main.route('/post/post_id')
 def post():
     return render_template('post.html')
+
+@main.route('/profile/user/edit')
+def edit_profile():
+    return render_template('editprofile.html')
